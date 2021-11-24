@@ -1,0 +1,81 @@
+
+#docBody {
+  padding: 0;
+  margin: 0;
+  backdrop-filter: blur(100px);
+  background-image: url(../slider/images/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-position: center center;
+  transition: all 0.6s ease-in-out;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.images {
+  position: relative;
+  width: 715px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image_wrap {
+  display: flex;
+  transition: all 0.5s ease-in-out;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* buttons */
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  outline: none;
+  transform: translateY(-50%);
+}
+
+.btn i {
+  font-size: 64px;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.1;
+}
+
+.btn-prev {
+  left: 50px;
+}
+.btn-prev i:hover {
+  transform: rotate(-60deg);
+}
+
+.btn-next {
+  right: 50px;
+}
+.btn-next i:hover {
+  transform: rotate(60deg);
+}
+
+
+@media (max-width: 933px) {
+  .btn {
+    position: absolute;
+    top: 90%;
+  }
+}
