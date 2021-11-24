@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   backdrop-filter: blur(100px);
-  background-image: url(../slider/images/1.jpg);
+  background-image: url(images/1.jpg);
   background-repeat: no-repeat;
   background-size: cover !important;
   background-position: center center;
