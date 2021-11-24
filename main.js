@@ -9,13 +9,13 @@ function imageSlideNext() {
   value += 100;
   img.style.transform = `translateX(${-value}%)`;
   console.log(count, value, img.style.transform);
-  docBody.style.background = `url(../slider/images/${count+1}.jpg)`;
+  docBody.style.background = `url(slider/images/${count+1}.jpg)`;
 
   if (count == 5) {
     img.style.transform = `translateX(0px)`;
     count = 0;
     value = 0;
-    docBody.style.background = `url(../slider/images/${count+1}.jpg)`;
+    docBody.style.background = `url(slider/images/${count+1}.jpg)`;
   }
 }
 
@@ -24,13 +24,13 @@ function imageSlidePrev() {
     img.style.transform = `translateX(500%)`;
     count = 5;
     value = 500;
-    docBody.style.background = `url(../slider/images/${count}.jpg)`;
+    docBody.style.background = `url(slider/images/${count}.jpg)`;
   }
 
   count--;
   value -= 100;
   img.style.transform = `translateX(${-value}%)`;
   console.log(count, value, img.style.transform);
-  docBody.style.background = `url(../slider/images/${count+1}.jpg)`;
+  docBody.style.background = `url(slider/images/${count+1}.jpg)`;
 }
 
